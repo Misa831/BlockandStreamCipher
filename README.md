@@ -3,6 +3,13 @@
 ## Project Description
 C++ implementation of a Block and Stream Cipher
 
+## How to Compile
+
+You will need both the main.cc file and cipher.h file in the same directory. To complile, you will enter: 
+
+>g++ main.cc
+
+
 ## How to run this application
 This program is run in a terminal, requiring 5 additional arguments.
 
@@ -16,20 +23,28 @@ argv[4] is the name of the file containing the key.
 
 argv[5] must be either an 'E' or a 'D'. This will determine if the program is encrypting or decrypting. 
 
-Example command
->  ./a.out B plaintext.txt cipherText.txt keyValue.txt E 
+Command Structure to run: 
+
+`./a.out argv[1] argv[2] argv[3] argv[4] argv[5]`
+
+Example command 1: 
+
+`./a.out B plaintext.txt cipherText.txt keyValue.txt E` 
 - This would encypt the plaintext to ciphertext and output the digest in cipherText.txt. 
 
 Example Command 2: 
-> ./a.out B plaintext.txt cipherText.txt keyValue.txt D
+
+`./a.out B plaintext.txt cipherText.txt keyValue.txt D`
 - This decrypts digest found in cipherText.txt, and outputs the contents in the terminal. 
 
 
 Example Command 3: 
-> ./a.out S plaintext.txt cipherText.txt keyValue.txt E
+
+`./a.out S plaintext.txt cipherText.txt keyValue.txt E`
 - Encrypts plaintext and inserts text into cipherText.txt. 
 
 
 Example Command 4: 
-> ./a.out B plaintext.txt cipherText.txt keyValue.txt D
+
+`./a.out B plaintext.txt cipherText.txt keyValue.txt D`
  - decrypts contents of the cipherText.txt. 
