@@ -12,7 +12,7 @@ argv[4] is the name of the file containing the key.
 argv[5] must be either an 'E' or a 'D'. This will determine if the program is encrypting or decrypting. 
 
 Example command: 
-'./a.out B plaintext.txt cipherText.txt keyValue.txt E' 
+' ./a.out B plaintext.txt cipherText.txt keyValue.txt E ' 
 - This would encypt the plaintext to ciphertext and output the digest in cipherText.txt. 
 Example Command 2: ""./a.out B plaintext.txt cipherText.txt keyValue.txt D" 
 - This decrypts digest found in cipherText.txt, and outputs the contents in the terminal. 
